@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Uday Kiran Nakka - Software Development Engineer (Fresher) & Data Science Graduate specializing in Python, Java, SQL, Machine Learning, and Web Technologies.">
+  <meta name="keywords" content="Uday Kiran Nakka, Software Engineer, Data Science, Python, Java, SQL, Power BI, Portfolio">
+  <meta name="author" content="Uday Kiran Nakka">
+  <title>Uday Kiran Nakka | Software Development Engineer & Data Science</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Uday Kiran</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Color Theme" title="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Resume CTA Button -->
+        <a href="assets/Uday_Resume.pdf" class="btn btn-sm btn-primary-outline" target="_blank" download="Uday_Kiran_Nakka_Resume.pdf">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span>Available for SDE & Tech Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="greeting">Hello World, I'm</span>
+            <span class="highlight-name">Uday Kiran Nakka</span>
+          </h1>
+
+          <div class="typewriter-box">
+            <span class="type-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Entry-level <strong>Software Development Engineer</strong> with strong fundamentals in programming, data structures, and problem-solving. Experienced in building modular applications, working with databases, and developing AI-powered solutions.
+          </p>
+
+          <!-- Hero Metrics / Badges -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">7.82</span>
+              <span class="metric-label">B.Tech CGPA</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">3+</span>
+              <span class="metric-label">Core Projects</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">85%</span>
+              <span class="metric-label">CNN Model Accuracy</span>
+            </div>
+          </div>
+
+          <!-- Hero CTA Actions -->
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Work
+            </a>
+            <a href="assets/Uday_Resume.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-file-pdf"></i> View Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane"></i> Get In Touch
+            </a>
+          </div>
+
+          <!-- Hero Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://www.linkedin.com/in/uday-kiran-n-726744257/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:nakkaudaykiran25@gmail.com" class="social-link" title="Email Uday">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+917989315411" class="social-link" title="Call Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://github.com/udaykiran2503" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Card -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">uday@dev-machine: ~</div>
+              <div class="terminal-badge">bash</div>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat developer_profile.json</span></div>
+              <div class="t-output">
+                <span class="t-punct">{</span><br>
+                &nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Uday Kiran Nakka"</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Software Development Engineer"</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"education"</span>: <span class="t-str">"B.Tech - CS & Data Science"</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"institution"</span>: <span class="t-str">"KKR & KSR Inst. of Tech & Sci"</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Guntur, Andhra Pradesh, India"</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"primary_stack"</span>: <span class="t-punct">[</span><span class="t-str">"Python"</span>, <span class="t-str">"Java"</span>, <span class="t-str">"SQL"</span>, <span class="t-str">"TensorFlow"</span>, <span class="t-str">"Power BI"</span><span class="t-punct">]</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"mindset"</span>: <span class="t-str">"Clean Code, Modularity, Scalability"</span>,<br>
+                &nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-success">"Ready to make an immediate impact"</span><br>
+                <span class="t-punct">}</span>
+              </div>
+              <div class="t-line mt-2"><span class="t-prompt">$</span> <span class="t-cmd">python -c "print('Let\'s build together!')"</span></div>
+              <div class="t-output t-cyan">>> Let's build together! 🚀</div>
+              <div class="t-line mt-2"><span class="t-prompt">$</span> <span class="t-cursor-block"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Column -->
+          <div class="about-text-card">
+            <div class="card-glow"></div>
+            <h3 class="about-heading">
+              <i class="fa-solid fa-terminal text-accent"></i> Engineering Passionate & Data Driven
+            </h3>
+            <p class="about-para">
+              I am an entry-level <strong>Software Development Engineer</strong> graduated with a Bachelor of Technology in <strong>Computer Science and Data Science</strong> from KKR & KSR Institute of Technology and Sciences, Guntur.
+            </p>
+            <p class="about-para">
+              My technical foundation spans core programming languages like <strong>Python</strong> and <strong>Java</strong>, database systems with <strong>SQL</strong>, and modern web development technologies. I possess hands-on experience building modular desktop and web applications, machine learning audio classification pipelines with <strong>TensorFlow CNNs</strong>, and automated web scrapers.
+            </p>
+            <p class="about-para">
+              During my internship at <strong>Brainovision Solutions</strong>, I engineered enterprise-level interactive business intelligence dashboards using Power BI and DAX, streamlining data transformation for key stakeholders. I am adaptable, a fast learner, and eager to contribute to global engineering teams.
+            </p>
+
+            <!-- Quick Details Matrix -->
+            <div class="info-chips-grid">
+              <div class="info-chip">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="chip-title">Location</span>
+                  <span class="chip-val">Guntur, Andhra Pradesh</span>
+                </div>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <span class="chip-title">Degree</span>
+                  <span class="chip-val">B.Tech (CS & Data Science)</span>
+                </div>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="chip-title">Email</span>
+                  <span class="chip-val"><a href="mailto:nakkaudaykiran25@gmail.com">nakkaudaykiran25@gmail.com</a></span>
+                </div>
+              </div>
+              <div class="info-chip">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span class="chip-title">Phone</span>
+                  <span class="chip-val"><a href="tel:+917989315411">+91 79893 15411</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards Column -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon-box bg-purple">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <div class="pillar-info">
+                <h4>Modular Software Design</h4>
+                <p>Designing robust application architectures with object-oriented principles, rigorous input validation, and clean separation of concerns.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box bg-cyan">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="pillar-info">
+                <h4>Data Science & Deep Learning</h4>
+                <p>Training convolutional neural networks, audio feature engineering, and data pipeline transformation using TensorFlow, Pandas, and NumPy.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box bg-emerald">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <div class="pillar-info">
+                <h4>Analytics & Business Intelligence</h4>
+                <p>Developing interactive reporting dashboards, DAX queries, and KPI data modeling to extract actionable insights from raw data.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box bg-amber">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="pillar-info">
+                <h4>Problem Solving & Rapid Upskilling</h4>
+                <p>Strong algorithmic foundations, persistent debugging mindset, and quick adaptability to new toolchains, frameworks, and workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SIMULATOR SECTION -->
+    <section class="section terminal-playground-section">
+      <div class="container">
+        <div class="interactive-terminal-wrapper">
+          <div class="terminal-topbar">
+            <div class="dots-container">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-bar-title">
+              <i class="fa-solid fa-terminal"></i> Interactive Shell — type <code>help</code> or try <code>skills</code>, <code>projects</code>, <code>contact</code>
+            </div>
+            <button class="terminal-clear-btn" id="terminal-clear" title="Clear screen">
+              <i class="fa-solid fa-trash-can"></i> Clear
+            </button>
+          </div>
+          <div class="interactive-terminal-body" id="interactive-terminal">
+            <div class="term-welcome">
+              Welcome to <span class="text-accent">Uday Kiran Nakka's</span> interactive CLI portfolio! [Version 1.0.0]<br>
+              Type <span class="term-highlight">help</span> to view all available commands, or click any command below:
+            </div>
+            <div class="quick-cmd-chips">
+              <button class="cmd-chip" data-cmd="skills">skills</button>
+              <button class="cmd-chip" data-cmd="projects">projects</button>
+              <button class="cmd-chip" data-cmd="experience">experience</button>
+              <button class="cmd-chip" data-cmd="certifications">certifications</button>
+              <button class="cmd-chip" data-cmd="education">education</button>
+              <button class="cmd-chip" data-cmd="contact">contact</button>
+              <button class="cmd-chip" data-cmd="hire">hire</button>
+            </div>
+            <div id="terminal-history"></div>
+            <div class="terminal-input-row">
+              <span class="term-prompt">guest@uday-portfolio:~$</span>
+              <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g., 'help')...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Stack</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon text-python"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item">
+                <i class="fa-brands fa-python text-python"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Python</span>
+                  <span class="tag-level">Advanced (Core, OOP, Data Science)</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-brands fa-java text-java"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Java</span>
+                  <span class="tag-level">Core Java, OOP, Full-Stack Foundation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon text-web"><i class="fa-solid fa-globe"></i></div>
+              <h3>Web Technologies</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item">
+                <i class="fa-brands fa-html5 text-html"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">HTML5</span>
+                  <span class="tag-level">Semantic Markup & Accessibility</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-brands fa-css3-alt text-css"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">CSS3</span>
+                  <span class="tag-level">Flexbox, Grid, Responsive UI</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-brands fa-js text-js"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">JavaScript</span>
+                  <span class="tag-level">ES6+, DOM Manipulation, Async/APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon text-sql"><i class="fa-solid fa-database"></i></div>
+              <h3>Databases & Querying</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-table text-sql"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">SQL</span>
+                  <span class="tag-level">Complex Queries, Joins, Aggregations</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-diagram-project text-cyan"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Database Modeling</span>
+                  <span class="tag-level">Schema Design, ACID, Integrity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data & BI Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon text-powerbi"><i class="fa-solid fa-chart-simple"></i></div>
+              <h3>Data & Business Intelligence</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-chart-column text-powerbi"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Power BI</span>
+                  <span class="tag-level">Interactive Dashboards, ETL & Reports</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-calculator text-amber"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">DAX (Basics)</span>
+                  <span class="tag-level">Measures, Calculated Columns & KPIs</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-broom text-emerald"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Data Cleaning & Transformation</span>
+                  <span class="tag-level">Power Query, Data Modeling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Libraries Card -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon text-ai"><i class="fa-solid fa-network-wired"></i></div>
+              <h3>AI, ML & Libraries</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-microchip text-ai"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">TensorFlow & CNN</span>
+                  <span class="tag-level">Deep Learning, Audio Recognition</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-spider text-orange"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">BeautifulSoup & Scrapy</span>
+                  <span class="tag-level">Web Scraping & Data Extraction</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-cubes-stacked text-pandas"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Pandas & NumPy</span>
+                  <span class="tag-level">Data Wrangling, Structuring & Analytics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools & Workflows -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon text-tools"><i class="fa-solid fa-toolbox"></i></div>
+              <h3>Developer Tools & Workflows</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag-item">
+                <i class="fa-brands fa-git-alt text-orange"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Git & GitHub</span>
+                  <span class="tag-level">Version Control, Collaboration</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-book-bookmark text-orange"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">Jupyter Notebook & Google Colab</span>
+                  <span class="tag-level">Exploratory ML & Prototyping</span>
+                </div>
+              </div>
+              <div class="skill-tag-item">
+                <i class="fa-solid fa-code text-blue"></i>
+                <div class="tag-meta">
+                  <span class="tag-name">VS Code</span>
+                  <span class="tag-level">Debugging, Extensions & Environment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills / Competencies Row -->
+        <div class="competencies-box">
+          <h4 class="comp-title"><i class="fa-solid fa-lightbulb"></i> Core Professional Competencies</h4>
+          <div class="comp-badges">
+            <span class="comp-badge"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+            <span class="comp-badge"><i class="fa-solid fa-comments"></i> Communication</span>
+            <span class="comp-badge"><i class="fa-solid fa-users"></i> Team Collaboration</span>
+            <span class="comp-badge"><i class="fa-solid fa-shuffle"></i> Adaptability</span>
+            <span class="comp-badge"><i class="fa-solid fa-arrow-trend-up"></i> Willingness to Learn</span>
+            <span class="comp-badge"><i class="fa-solid fa-bug"></i> Analytical Debugging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Career Journey</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Data Visualization Intern</h3>
+                  <h4 class="company-name">
+                    <i class="fa-solid fa-building"></i> Brainovision Solutions Pvt. Ltd.
+                  </h4>
+                </div>
+                <div class="timeline-badge">
+                  <i class="fa-regular fa-calendar"></i> Jul 2024 – Sep 2024
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="timeline-bullets">
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span>Developed high-impact, interactive business intelligence dashboards using <strong>Power BI</strong> to visualize operational metrics.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span>Performed end-to-end <strong>data cleaning, transformation, and relational modeling</strong> across multiple datasets for optimal query speeds.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span>Formulated complex <strong>DAX measures, calculated columns, and custom KPIs</strong> to deliver actionable business insights.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span>Collaborated proactively with engineering and analytical teams to understand and satisfy critical business requirements.</span>
+                  </li>
+                </ul>
+
+                <div class="tech-pill-list">
+                  <span class="tech-pill">Power BI</span>
+                  <span class="tech-pill">DAX</span>
+                  <span class="tech-pill">Data Modeling</span>
+                  <span class="tech-pill">ETL</span>
+                  <span class="tech-pill">KPI Reporting</span>
+                  <span class="tech-pill">Data Visualization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Featured Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-container">
+          <button class="filter-btn active" data-filter="all">All Projects (3)</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & Deep Learning</button>
+          <button class="filter-btn" data-filter="systems">Python & Databases</button>
+          <button class="filter-btn" data-filter="scraping">Web Scraping & Data</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Road Accident Protocol System -->
+          <div class="project-card" data-category="ai-ml">
+            <div class="project-banner bg-gradient-ai">
+              <div class="project-icon-large">
+                <i class="fa-solid fa-car-burst"></i>
+              </div>
+              <span class="project-featured-badge">AI / Deep Learning</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Road Accident Protocol System</h3>
+              <p class="project-subtitle">Automated Crash Recognition & Emergency Alert Dispatcher</p>
+              <p class="project-desc">
+                Built an intelligent real-time accident detection and dispatch system utilizing Convolutional Neural Networks (CNN) for acoustic crash recognition. Engineered to instantly notify emergency contacts and first responders with precise GPS coordinates.
+              </p>
+
+              <!-- Key Achievements / Highlights -->
+              <div class="project-metrics">
+                <div class="p-metric"><i class="fa-solid fa-bullseye"></i> <strong>85%</strong> Detection Accuracy</div>
+                <div class="p-metric"><i class="fa-solid fa-database"></i> <strong>10,000+</strong> Audio Samples Preprocessed</div>
+                <div class="p-metric"><i class="fa-solid fa-bell"></i> <strong>Real-time</strong> Twilio & GPS Dispatch</div>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tags">
+                <span class="p-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="p-tag"><i class="fa-solid fa-brain"></i> TensorFlow</span>
+                <span class="p-tag"><i class="fa-solid fa-network-wired"></i> CNN</span>
+                <span class="p-tag"><i class="fa-solid fa-wave-square"></i> Audio Processing</span>
+                <span class="p-tag"><i class="fa-solid fa-message"></i> Twilio API</span>
+                <span class="p-tag"><i class="fa-solid fa-location-crosshairs"></i> GPS Service</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary-outline open-modal-btn" data-modal="modal-accident">
+                  <i class="fa-solid fa-circle-info"></i> Project Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Banking Application -->
+          <div class="project-card" data-category="systems">
+            <div class="project-banner bg-gradient-banking">
+              <div class="project-icon-large">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <span class="project-featured-badge">Software System</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Modular Banking Application</h3>
+              <p class="project-subtitle">Secure Financial Transaction & Account Management Engine</p>
+              <p class="project-desc">
+                Architected and developed a modular banking system handling critical financial workflows including customer account registration, fund deposits, withdrawals, and detailed transaction ledger history with ACID-compliant relational data persistence.
+              </p>
+
+              <!-- Key Achievements / Highlights -->
+              <div class="project-metrics">
+                <div class="p-metric"><i class="fa-solid fa-shield-halved"></i> <strong>Strict</strong> Input Validation & Sanitization</div>
+                <div class="p-metric"><i class="fa-solid fa-database"></i> <strong>SQL</strong> Relational Data Consistency</div>
+                <div class="p-metric"><i class="fa-solid fa-bug-slash"></i> <strong>Robust</strong> Error & Exception Handling</div>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tags">
+                <span class="p-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="p-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                <span class="p-tag"><i class="fa-solid fa-cubes"></i> OOP Architecture</span>
+                <span class="p-tag"><i class="fa-solid fa-lock"></i> Data Security</span>
+                <span class="p-tag"><i class="fa-solid fa-list-check"></i> Modular Design</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary-outline open-modal-btn" data-modal="modal-banking">
+                  <i class="fa-solid fa-circle-info"></i> Project Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Flipkart Product Review Scraper -->
+          <div class="project-card" data-category="scraping">
+            <div class="project-banner bg-gradient-scraper">
+              <div class="project-icon-large">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <span class="project-featured-badge">Data Engineering</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Flipkart Product Review Scraper</h3>
+              <p class="project-subtitle">Automated Web Data Extraction & Analytics Pipeline</p>
+              <p class="project-desc">
+                Engineered an automated scraping solution to harvest product reviews, ratings, and customer sentiment parameters from dynamic e-commerce web pages. Transformed raw unstructured HTML into structured tabular datasets for downstream analytics.
+              </p>
+
+              <!-- Key Achievements / Highlights -->
+              <div class="project-metrics">
+                <div class="p-metric"><i class="fa-solid fa-robot"></i> <strong>Automated</strong> Web Scraping Engine</div>
+                <div class="p-metric"><i class="fa-solid fa-file-csv"></i> <strong>Structured</strong> Dataset Generation</div>
+                <div class="p-metric"><i class="fa-solid fa-chart-line"></i> <strong>Ready for</strong> Sentiment & Trend Analysis</div>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tags">
+                <span class="p-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="p-tag"><i class="fa-solid fa-spider"></i> BeautifulSoup</span>
+                <span class="p-tag"><i class="fa-solid fa-table"></i> Pandas</span>
+                <span class="p-tag"><i class="fa-solid fa-filter"></i> Data Cleaning</span>
+                <span class="p-tag"><i class="fa-solid fa-clock-rotate-left"></i> Error Logging</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary-outline open-modal-btn" data-modal="modal-scraper">
+                  <i class="fa-solid fa-circle-info"></i> Project Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Credentials</span>
+          <h2 class="section-title">Certifications & Courses</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrap bg-python-glow">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status"><i class="fa-solid fa-circle-check text-emerald"></i> Verified</div>
+              <h3 class="cert-name">Python for Data Science</h3>
+              <p class="cert-desc">Mastered core computational data science concepts, data structures, algorithmic manipulation, and scientific libraries for exploratory analysis.</p>
+              <div class="cert-skills">
+                <span>Data Manipulation</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Statistical Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrap bg-java-glow">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status"><i class="fa-solid fa-circle-check text-emerald"></i> Verified</div>
+              <h3 class="cert-name">Java Full Stack Development</h3>
+              <p class="cert-desc">Comprehensive training in Core Java, Object-Oriented Architecture, Web Fundamentals, Client-Server interactions, and Database Connectivity.</p>
+              <div class="cert-skills">
+                <span>Core Java</span>
+                <span>OOP</span>
+                <span>Web Stack</span>
+                <span>Backend Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-icon-wrap bg-powerbi-glow">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status"><i class="fa-solid fa-circle-check text-emerald"></i> Verified</div>
+              <h3 class="cert-name">Power BI</h3>
+              <p class="cert-desc">Advanced dashboard construction, DAX query formulation, Power Query data transformation, star schema data modeling, and KPI tracking.</p>
+              <div class="cert-skills">
+                <span>Power BI Desktop</span>
+                <span>DAX Measures</span>
+                <span>Data Modeling</span>
+                <span>ETL Transformation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            <div class="edu-left">
+              <div class="edu-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="edu-cgpa-box">
+                <span class="cgpa-val">7.82</span>
+                <span class="cgpa-label">CGPA</span>
+              </div>
+            </div>
+
+            <div class="edu-right">
+              <div class="edu-duration">
+                <i class="fa-regular fa-calendar-days"></i> Nov 2021 – May 2025
+              </div>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="edu-major">Computer Science and Data Science</h4>
+              <h5 class="edu-institute">
+                <i class="fa-solid fa-building-columns text-accent"></i> KKR & KSR Institute of Technology and Sciences, Guntur
+              </h5>
+              
+              <div class="edu-coursework">
+                <span class="course-label">Relevant Key Coursework:</span>
+                <div class="course-tags">
+                  <span class="c-tag">Data Structures & Algorithms</span>
+                  <span class="c-tag">Database Management Systems (DBMS)</span>
+                  <span class="c-tag">Object-Oriented Programming (OOP)</span>
+                  <span class="c-tag">Machine Learning & Deep Learning</span>
+                  <span class="c-tag">Web Technologies</span>
+                  <span class="c-tag">Data Warehousing & Mining</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-col">
+            <div class="contact-card-highlight">
+              <h3>Let's build something exceptional together!</h3>
+              <p>I am actively seeking full-time <strong>Software Development Engineer (SDE)</strong>, <strong>Data Science</strong>, and <strong>Full-Stack</strong> roles. Feel free to reach out via email, phone, or LinkedIn!</p>
+            </div>
+
+            <div class="contact-methods">
+              <!-- Email Item -->
+              <div class="contact-method-card" data-copy="nakkaudaykiran25@gmail.com">
+                <div class="method-icon bg-purple"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Email Address</span>
+                  <a href="mailto:nakkaudaykiran25@gmail.com" class="method-value">nakkaudaykiran25@gmail.com</a>
+                </div>
+                <button class="copy-btn" title="Copy Email" aria-label="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="contact-method-card" data-copy="+917989315411">
+                <div class="method-icon bg-cyan"><i class="fa-solid fa-phone"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Phone & WhatsApp</span>
+                  <a href="tel:+917989315411" class="method-value">+91 79893 15411</a>
+                </div>
+                <button class="copy-btn" title="Copy Phone" aria-label="Copy Phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Item -->
+              <div class="contact-method-card">
+                <div class="method-icon bg-emerald"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Location</span>
+                  <span class="method-value">Guntur, Andhra Pradesh, India</span>
+                </div>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="contact-method-card">
+                <div class="method-icon bg-blue"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/uday-kiran-n-726744257/" target="_blank" rel="noopener noreferrer" class="method-value">
+                    linkedin.com/in/uday-kiran-n <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="contact-form">
+              <h3 class="form-title"><i class="fa-solid fa-paper-plane text-accent"></i> Send a Message</h3>
+              
+              <div class="form-group">
+                <label for="name">Your Full Name <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Opportunity / Project Collaboration" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-message input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" rows="5" placeholder="Hi Uday, I came across your profile and would love to discuss..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message Directly
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Uday Kiran Nakka</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building robust, scalable, and intelligent software systems.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/uday-kiran-n-726744257/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:nakkaudaykiran25@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+917989315411" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://github.com/udaykiran2503" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Uday Kiran Nakka. All rights reserved. Crafted with passion & code.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK-TO-TOP BUTTON -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- PROJECT MODALS -->
+  <!-- Modal 1: Road Accident Protocol System -->
+  <div class="modal-overlay" id="modal-accident">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <div class="modal-icon-badge bg-gradient-ai"><i class="fa-solid fa-car-burst"></i></div>
+        <div>
+          <h3>Road Accident Protocol System</h3>
+          <span class="modal-category">Python • TensorFlow • CNN • Twilio API • GPS</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h4>Project Architecture & Overview</h4>
+        <p>This project is an intelligent emergency protocol system designed to eliminate delay in accident detection and emergency response dispatch. Using acoustic frequency pattern recognition powered by Convolutional Neural Networks, the system identifies collision sound signatures in real-time.</p>
+        
+        <h4>Key Technical Contributions:</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>Audio Feature Engineering:</strong> Collected and preprocessed a diverse dataset of over 10,000+ acoustic crash and environmental noise audio samples.</li>
+          <li><strong>Deep Learning Model:</strong> Built and trained a 2D CNN architecture on spectrogram features, achieving an impressive 85% classification accuracy.</li>
+          <li><strong>Automated Emergency Pipeline:</strong> Integrated Twilio SMS API and GPS coordinates lookup to trigger immediate, automated alert dispatches to registered emergency contacts and nearby medical facilities upon accident confirmation.</li>
+          <li><strong>Iterative Optimization:</strong> Tuned model hyperparameters and noise filtering layers to minimize false-positive detections.</li>
+        </ul>
+
+        <div class="modal-tech-stack">
+          <span>Python</span>
+          <span>TensorFlow</span>
+          <span>Keras</span>
+          <span>CNN</span>
+          <span>Twilio API</span>
+          <span>GPS Geolocation</span>
+          <span>Audio Processing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Banking Application -->
+  <div class="modal-overlay" id="modal-banking">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <div class="modal-icon-badge bg-gradient-banking"><i class="fa-solid fa-building-columns"></i></div>
+        <div>
+          <h3>Modular Banking Application</h3>
+          <span class="modal-category">Python • SQL • Object-Oriented Architecture</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h4>Project Architecture & Overview</h4>
+        <p>A secure, modular banking management system engineered following OOP principles and robust relational database integrity. Designed to manage everyday core financial operations reliably without data corruption.</p>
+        
+        <h4>Key Technical Contributions:</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>Core Banking Features:</strong> Implemented account creation, balance inquiry, deposit handling, fund withdrawals with overdraft protection, and full ledger transaction auditing.</li>
+          <li><strong>SQL Persistence Layer:</strong> Integrated Python with relational SQL tables to enforce ACID transactions and reliable persistent records.</li>
+          <li><strong>Defensive Engineering:</strong> Built multi-layer input validation, type sanitization, and structured try-catch exception handling to ensure 99.9% runtime stability.</li>
+          <li><strong>Modular Extensibility:</strong> Designed clean class hierarchies and separation between presentation, business logic, and data access layers.</li>
+        </ul>
+
+        <div class="modal-tech-stack">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Relational Schema</span>
+          <span>OOP</span>
+          <span>Exception Handling</span>
+          <span>Data Validation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Flipkart Scraper -->
+  <div class="modal-overlay" id="modal-scraper">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <div class="modal-icon-badge bg-gradient-scraper"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <div>
+          <h3>Flipkart Product Review Scraper</h3>
+          <span class="modal-category">Python • BeautifulSoup • Pandas • Data Extraction</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h4>Project Architecture & Overview</h4>
+        <p>An automated web data harvesting pipeline designed to bypass dynamic web elements, extract extensive customer reviews, ratings, and metadata across thousands of e-commerce product pages, and prepare structured datasets for analytics.</p>
+        
+        <h4>Key Technical Contributions:</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>Dynamic Parsing:</strong> Parsed multi-page web catalogs, handling asynchronous elements, pagination, and dynamic DOM trees using BeautifulSoup and requests.</li>
+          <li><strong>Data Cleaning & Transformation:</strong> Cleaned raw scraped strings, extracted rating integers, timestamps, and customer reviews using Regex and Pandas.</li>
+          <li><strong>Resilient Scraping:</strong> Implemented error handling, exponential backoff, request header rotation, and logging to handle network hiccups and missing DOM elements gracefully.</li>
+          <li><strong>Downstream Analytics Readiness:</strong> Exported clean, structured CSV/JSON datasets tailored for sentiment classification and customer satisfaction trend modeling.</li>
+        </ul>
+
+        <div class="modal-tech-stack">
+          <span>Python</span>
+          <span>BeautifulSoup</span>
+          <span>Requests</span>
+          <span>Pandas</span>
+          <span>Regex</span>
+          <span>Data Pipeline</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
